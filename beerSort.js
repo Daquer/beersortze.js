@@ -1,6 +1,6 @@
 //Acessar https://ze.delivery/produtos/categoria/cervejas
 // Abrir o Developer Tools do browser e colar o código abaixo
-// Utilizar o sortBy de passando o atributo pelo qual desejar fazer o sort. O padrão é o custo-benefício (costBenefit)
+// Utilizar o sortBy passando o atributo pelo qual desejar fazer o sort. O padrão é o custo-benefício (costBenefit)
 // Se desejar, existe a função toCSV (necessário passar o parâmetro beers) para gerar uma string que pode ser inserida diretamente em um arquivo csv em modo texto
 
 var beers = [];
