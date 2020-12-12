@@ -36,3 +36,7 @@ function toCSV(array) {
 		return Object.values(beer).join(";");
 	}).join("\n");
 }
+
+
+//executando o sortBy para já trazer um resultado de cara
+sortBy();
