@@ -4,9 +4,9 @@
 // Se desejar, existe a função toCSV (necessário passar o parâmetro beers) para gerar uma string que pode ser inserida diretamente em um arquivo csv em modo texto
 
 var beers = [];
-Array.from(document.getElementsByClassName("css-1q4ix2j-productDetails")).forEach(function(item) {
+Array.from(document.getElementsByClassName("css-hpgf8j")).forEach(function(item) {
    let title = item.firstElementChild.innerText;
-   let price = parseFloat(item.lastElementChild.lastElementChild.innerText.replace("R$", "").replace(",","."));
+   let price = parseFloat(item.lastElementChild.lastElementChild.innerText.replace("R$", "").replace(".","").replace(",","."));
    let ml = title.match(/\d+L/) ? parseInt(title.match(/\d+/)[0]) * 1000 : parseInt(title.match(/\d+/)[0]);
 
    beers.push({
